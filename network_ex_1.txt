@@ -1,0 +1,31 @@
+Type;Address;Mask;Gateway;Network;Ethernet
+station;192.168.1.1;24;;1;08:12:4a:85:3b:6f
+routing table;192.168.1.0;24;;
+routing table;192.168.2.0;24;;
+routing table;192.168.4.0;25;192.168.1.254;
+station;192.168.1.2;24;;1;08:12:4a:ef:c2:a1
+routing table;192.168.1.0;24;;
+station;192.168.1.115;28;;1;08:12:4a:ec:24:17
+routing table;192.168.1.128;28;;
+router 1;192.168.1.254;24;;1;08:12:4a:10:7e:dc
+routing table;192.168.1.0;24;;
+station;192.168.2.1;24;;2;08:12:4a:21:55:61
+routing table;192.168.2.0;24;;
+station;192.168.2.2;24;;2;08:12:4a:cb:3d:91
+routing table;192.168.2.0;24;;
+station;192.168.2.128;24;;2;08:12:4a:ca:e2:72
+routing table;192.168.2.0;24;;
+station;192.168.3.1;23;;3;
+routing table;192.168.2.0;23;;
+station;192.168.3.2;24;;3;08:12:4a:e7:6a:68
+routing table;192.168.3.0;24;;
+router 1;192.168.3.254;24;;3;08:12:4a:c8:88:7c
+routing table;192.168.3.0;24;;
+station;192.168.4.1;24;;4;08:12:4a:4a:3b:6d
+routing table;192.168.4.0;24;;
+station;192.168.4.2;24;;4;08:12:4a:eb:42:0c
+routing table;192.168.4.0;24;;
+station;192.168.4.3;21;;3;08:12:4a:83:3e:cb
+routing table;192.168.0.0;21;;
+router 1;192.168.4.254;24;;4;08:12:4a:ce:7e:82
+routing table;192.168.4.0;24;;
