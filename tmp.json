@@ -1,0 +1,126 @@
+{
+    "station": [
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:85:3b:6f",
+            "address": "192.168.1.1",
+            "mask": "24",
+            "network": "1",
+            "routes": [
+                { "destination": "192.168.1.0", "mask": "24", "gateway": "" },
+                { "destination": "192.168.2.0", "mask": "24", "gateway": "" },
+                { "destination": "192.168.4.0", "mask": "25", "gateway": "192.168.1.254" }
+            ]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:ef:c2:a1",
+            "address": "192.168.1.2",
+            "mask": "24",
+            "network": "1",
+            "routes": [{ "destination": "192.168.1.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:ec:24:17",
+            "address": "192.168.1.115",
+            "mask": "28",
+            "network": "1",
+            "routes": [{ "destination": "192.168.1.128", "mask": "28", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:21:55:61",
+            "address": "192.168.2.1",
+            "mask": "24",
+            "network": "2",
+            "routes": [{ "destination": "192.168.2.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:cb:3d:91",
+            "address": "192.168.2.2",
+            "mask": "24",
+            "network": "2",
+            "routes": [{ "destination": "192.168.2.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:ca:e2:72",
+            "address": "192.168.2.128",
+            "mask": "24",
+            "network": "2",
+            "routes": [{ "destination": "192.168.2.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "",
+            "address": "192.168.3.1",
+            "mask": "23",
+            "network": "3",
+            "routes": [{ "destination": "192.168.2.0", "mask": "23", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:e7:6a:68",
+            "address": "192.168.3.2",
+            "mask": "24",
+            "network": "3",
+            "routes": [{ "destination": "192.168.3.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:4a:3b:6d",
+            "address": "192.168.4.1",
+            "mask": "24",
+            "network": "4",
+            "routes": [{ "destination": "192.168.4.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:eb:42:0c",
+            "address": "192.168.4.2",
+            "mask": "24",
+            "network": "4",
+            "routes": [{ "destination": "192.168.4.0", "mask": "24", "gateway": "" }]
+        },
+        {
+            "type": "station",
+            "ethernet": "08:12:4a:83:3e:cb",
+            "address": "192.168.4.3",
+            "mask": "21",
+            "network": "3",
+            "routes": [{ "destination": "192.168.0.0", "mask": "21", "gateway": "" }]
+        }
+    ],
+    "router": {
+        "router 1": [
+            {
+                "type": "router 1",
+                "ethernet": "08:12:4a:10:7e:dc",
+                "address": "192.168.1.254",
+                "mask": "24",
+                "network": "1",
+                "routes": [{ "destination": "192.168.1.0", "mask": "24", "gateway": "" }]
+            },
+            {
+                "type": "router 1",
+                "ethernet": "08:12:4a:c8:88:7c",
+                "address": "192.168.3.254",
+                "mask": "24",
+                "network": "3",
+                "routes": [{ "destination": "192.168.3.0", "mask": "24", "gateway": "" }]
+            }
+        ],
+        "router 2": [
+            {
+                "type": "router 2",
+                "ethernet": "08:12:4a:ce:7e:82",
+                "address": "192.168.4.254",
+                "mask": "24",
+                "network": "4",
+                "routes": [{ "destination": "192.168.4.0", "mask": "24", "gateway": "" }]
+            }
+        ]
+    }
+}
