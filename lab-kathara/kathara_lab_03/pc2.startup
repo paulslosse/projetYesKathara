@@ -1,0 +1,3 @@
+ip link set dev eth0 address 08:5d:5d:dd:b9:1c
+ip address add 192.168.1.5/24 dev eth0
+ip route add 192.168.1.0/24 dev eth0
