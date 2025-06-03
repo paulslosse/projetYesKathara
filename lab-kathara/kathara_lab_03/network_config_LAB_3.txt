@@ -1,0 +1,11 @@
+Type;Address;Mask;Gateway;Network;Ethernet
+station;192.168.1.1;24;;1;08:8f:fe:83:56:71
+routing table;192.168.1.0;24;;
+routing table;192.168.2.0;24;192.168.1.254;
+router 1;192.168.1.254;24;;1;08:da:db:f0:59:8a
+routing table;192.168.1.0;24;;
+router 1;192.168.2.254;24;;2;08:ea:1a:89:53:7d
+routing table;192.168.2.0;24;;
+station;192.168.2.1;24;;2;08:94:cc:21:a0:2b
+routing table;192.168.2.0;24;;
+routing table;192.168.1.0;24;192.168.2.254;
