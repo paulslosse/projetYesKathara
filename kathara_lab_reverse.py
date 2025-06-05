@@ -113,7 +113,6 @@ def generate_txt_from_kathara(lab_path, output_file):
 
             out_file.write(f"{dev_type};{ip};{mask};;{network_number};{ethernet}\n")
 
-            print(routes)
             for route_iface, dest, r_mask, gateway in routes:
                 if route_iface == iface:
                     out_file.write(f"routing table;{dest};{r_mask};{gateway};\n")
