@@ -102,7 +102,7 @@ def generate_txt_from_kathara(lab_path, output_file):
             ip = interfaces.get(iface, {}).get("ip", "")
             mask = interfaces.get(iface, {}).get("mask", "")
             ethernet = interfaces.get(iface, {}).get("ethernet", "")
-            network_number = letter_to_number(network_letter)
+            network_number = (network_letter if network_letter.isdigit() else letter_to_number(network_letter))
 
             if device.startswith("pc"):
                 dev_type = "station"
