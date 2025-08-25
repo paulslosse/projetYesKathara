@@ -1,0 +1,8 @@
+ip link set dev eth0 address 08:10:7f:d2:7b:e3
+ip address add 192.168.2.1/24 dev eth0
+ip route add 192.168.2.0/24 dev eth0
+ip route add 192.168.1.0/24 via 192.168.2.100 dev eth0
+ip route add 192.168.3.0/24 via 192.168.1.100 dev eth0
+
+iptables -A INPUT -s 192.168.1.0/24 -j DROP
+iptables -A OUTPUT -d 192.168.1.0/24 -j DROP
